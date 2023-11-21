@@ -30,7 +30,6 @@ onUnmounted(() => {
 
 <style>
 #app {
-  /* Example of a flexible container, you can adjust as needed */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -47,12 +46,9 @@ onUnmounted(() => {
   z-index: 100;
   padding: 10px 20px;
   border-radius: 10px;
-  /* Adjustments for smaller screens */
   font-size: 14px;
-  /* Default font size */
 }
 
-/* Media query for smaller screens */
 @media (max-width: 600px) {
   .offline-banner {
     right: 0;
@@ -61,7 +57,6 @@ onUnmounted(() => {
     width: 100%;
     border-radius: 0;
     font-size: 12px;
-    /* Smaller font size for smaller screens */
   }
 }
 </style>
