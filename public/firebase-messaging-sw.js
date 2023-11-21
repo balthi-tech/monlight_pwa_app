@@ -13,15 +13,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 }
 
-// {
-//   apiKey: 'AIzaSyDkJ1OibMC0wiZ__-ldeh4Kazhk_thob3Y',
-//   authDomain: 'pwa-app-ca864.firebaseapp.com',
-//   projectId: 'pwa-app-ca864',
-//   storageBucket: 'pwa-app-ca864.appspot.com',
-//   messagingSenderId: '1053462475719',
-//   appId: '1:1053462475719:web:1cc08f89085f05485c1fe2'
-// }
-
 firebase.initializeApp(firebaseConfig)
 
 const messaging = firebase.messaging()
