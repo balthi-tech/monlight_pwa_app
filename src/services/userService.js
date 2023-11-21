@@ -11,14 +11,12 @@ import {
   updateDoc
 } from 'firebase/firestore'
 
-// Exemple pour ajouter un nouvel utilisateur
 export async function addUser(user) {
   try {
     const docRef = await addDoc(collection(db, 'users'), {
       name: user.name,
       email: user.email
     })
-    // localStorage.setItem('userId', docRef.id)
     localStorage.setItem('userId', docRef.id)
     localStorage.setItem('email', user.email)
     localStorage.setItem('name', user.name)
